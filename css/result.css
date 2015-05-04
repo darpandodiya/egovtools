@@ -1,0 +1,31 @@
+/* For formatting the result table */
+
+.table {
+        border:1px;
+        border-color:#000000;
+        border-collapse:collapse;
+		margin-bottom:10px;
+    }
+    td {
+    	padding: 10px;
+    }
+
+    thead {
+        background-color:#1de9b6;
+        color: #FFF;
+    }
+
+    .odd {
+        background-color:#FFFFFF;
+    }
+
+    .even {
+        background-color:#DDDDDD;
+    }
+.items {
+	margin-top: 10px;
+	margin-bottom: 10px;
+        -moz-box-shadow: 7px 7px 7px #333; 
+	    -webkit-box-shadow: 7px 7px 7px #333;
+	    box-shadow: 7px 7px 7px #333;
+    }

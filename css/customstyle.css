@@ -1,0 +1,127 @@
+.button-xlarge {
+	font-size: 125%;
+}
+
+::-webkit-input-placeholder {
+   font-weight: normal;
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	font-weight: normal;
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	font-weight: normal;
+   text-align: center;  
+}
+
+:-ms-input-placeholder {
+font-weight: normal;  
+   text-align: center; 
+}
+
+.align-center-custom {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+}
+
+input{ 
+    text-align:center;
+    font-weight: bold; 
+}
+
+.pure-input-rounded {
+	text-align:center;
+}
+
+.pure-button-delete {
+    background: rgb(202, 60, 60);
+    color: #fff; /* this is a maroon */
+}
+
+.pure-button-primary {
+    background: #00e676 ;
+    color: #fff; /* this is a maroon */
+}
+
+.edit-aid {
+	color: #1de9b6;
+    text-decoration: none;
+}
+
+.header h2 a{
+	color: #03a9f4;
+	text-decoration: none;
+}
+
+.error-text {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: bold;
+	color: #ff3d00;
+}
+
+.success-text {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: bold;
+	color: #00e676;
+}
+
+.access-id {
+	font-size: small;
+	color: #03a9f4;
+	text-decoration: none;
+}
+
+.question {
+	color: #00bfa5 ;
+	font-weight: bold;
+}
+
+.answer {
+
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+	color: #4caf50  ;
+	font-size: 0.9em;
+}
+
+footer a {
+	color: #03a9f4;
+}
+
+.answer a {
+	color: #03a9f4;
+}
+
+.link-header {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #00bfa5;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.ddu-web-links a {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #03a9f4;
+	text-decoration: none;
+	margin-bottom: 3px;
+}
