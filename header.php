@@ -26,7 +26,7 @@
                 <li class="pure-menu-item menu-item-divided"><br><a href="about.php" class="pure-menu-link <?php if($pageName == 'about.php') echo 'pure-menu-selected'; ?>">About & FAQs</a></li>
                 <li class="pure-menu-item"><a href="spi-info.php" class="pure-menu-link <?php if($pageName == 'spi-info.php') echo 'pure-menu-selected'; ?>">SPI Info</a></li>
                 <li class="pure-menu-item"><a href="ddu-web.php" class="pure-menu-link <?php if($pageName == 'ddu-web.php') echo 'pure-menu-selected'; ?>">DDU On Web</a></li>
-                <li class="pure-menu-item "><a href="" class="pure-menu-link">Source Code</a></li>
+                <li class="pure-menu-item "><a href="https://github.com/darpandodiya/egovtools" class="pure-menu-link" target="_blank">Source Code</a></li>
                 <li class="pure-menu-item"><a href="http://www.darpandodiya.com/link-up/" target="_blank" title="Contact Me" class="pure-menu-link">Contact</a></li>
             </ul>
         </div>

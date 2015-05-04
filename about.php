@@ -70,7 +70,7 @@
                 <span class='answer'>
                 The application's open source. The source code is available on my GitHub. <br><br>
 
-                You are free to  use - modify - redistribute it. No copyrights claim whatsoever. <a href='' target='_blank'>Get It!</a>   
+                You are free to  use - modify - redistribute it. No copyrights claim whatsoever. <a href='https://github.com/darpandodiya/egovtools' target='_blank'>Get It!</a>   
                 </span>
                 <hr>
                 <span class='question' id="about">&rarr; Who am I?</span><br>
