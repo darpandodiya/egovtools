@@ -46,7 +46,7 @@
                 <span class='answer'>
                 Nope. It ain't. <br><br>
                 Basically, the application works as a proxy browser for you (Using PHP cURL library). <br>
-                When you enter your ID > The code goes to egov.ddit.ac.in > Enters the login details on the login page > Goes to your academic history > Opens your result > Extracts the data > And come back here with the extracted data and display it.  
+                When you enter your ID > The code goes to egov.ddit.ac.in > Enters the login details on the login page > Goes to your academic history > Opens your result > Extracts the data > And comes back here with the extracted data and displays it.  
                 </span>
                 <hr>
                 <span class='question'>&rarr; Put all the technical talks aside. Why am I so keen about results?</span><br>
@@ -75,7 +75,7 @@
                 <hr>
                 <span class='question' id="about">&rarr; Who am I?</span><br>
                 <span class='answer'>
-                I'm Darpan. 3rd year, Computer Engineering, DDIT. Just a normal human being, like, you. Nothing extra-ordinary. :) <br><br><a href='http://www.darpandodiya.com/about' title='Darpan Dodiya' target='_blank'><b>Know More</b></a> Or <a href='http://www.darpandodiya.com/link-up' title='Contact Darpan' target='_blank'><b>Say Hello</b></a> 
+                I'm <a href='http://www.darpandodiya.com' title='Darpan Dodiya' target='_blank'>Darpan Dodiya</a>. 3rd year, Computer Engineering, DDIT. Just a normal human being, like you, unless you're a superhero. :) I <a href='http://www.darpandodiya.com/quotation' title='Get A Website For You' target='_blank'>develop websites</a> in my free time.<br><br><a href='http://www.darpandodiya.com/about' title='Darpan Dodiya' target='_blank'><b>Know More</b></a> Or <a href='http://www.darpandodiya.com/link-up' title='Contact Darpan' target='_blank'><b>Say Hello</b></a> 
                 </span>
 
             </p>
