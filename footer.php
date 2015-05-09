@@ -13,5 +13,5 @@
 <a href="about.php#why-the-ads" target="_blank" title="Why this ads?" class="access-id">Why this ads?</a>
 <!-- Google Ads -->
 <br><br>
-No copyright claims. Source code is available <a href="about.php#code" title="Source Code of EGov Tools">here.</a><br>By <a href="about.php#about" title="Darpan Dodiya" target="_blank"><b>Darpan</b><br></a>.
+No copyright claims. Source code is available <a href="about.php#code" title="Source Code of EGov Tools">&lt; here /&gt;</a><br>By <a href="about.php#about" title="Darpan Dodiya" target="_blank"><b>Darpan Dodiya</b><br></a>.
 </footer>

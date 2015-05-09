@@ -28,6 +28,8 @@
                 <li class="pure-menu-item"><a href="ddu-web.php" class="pure-menu-link <?php if($pageName == 'ddu-web.php') echo 'pure-menu-selected'; ?>">DDU On Web</a></li>
                 <li class="pure-menu-item "><a href="https://github.com/darpandodiya/egovtools" class="pure-menu-link" target="_blank">Source Code</a></li>
                 <li class="pure-menu-item"><a href="http://www.darpandodiya.com/link-up/" target="_blank" title="Contact Me" class="pure-menu-link">Contact</a></li>
+
+                <li class="pure-menu-item menu-item-divided"><br><a href="dont-click.php" class="pure-menu-link <?php if($pageName == 'dont-click.php') echo 'pure-menu-selected'; ?>">Don't Click Here</a></li>
             </ul>
         </div>
     </div>

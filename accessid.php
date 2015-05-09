@@ -42,10 +42,8 @@
 
                     if(isset($_GET['errorid'])) {
                         echo "<p class='error-text'>An account with ID: ".$_GET['errorid']." is already present. Click <a href='accessid.php?mode=forgot'>here</a> to recover your existing ID.</p>";
-                        exit;
                     }
                     echo "<p class='error-text'>There was an error with your inputs. Please <a href='accessid.php'>try again</a>.</p>";
-                    exit;
                 }
             }
 
@@ -278,18 +276,27 @@
 
                 if (mysqli_num_rows($aidresult) == 0) {
                     echo "<p class='error-text'> Invalid Access ID. Click <b><a href='accessid.php?mode=edit'>here</a></b> to try again or click <b><a href='accessid.php'>here</a></b> to create a new Access ID. </p>";
-                    exit(0);
-                }
 
-                $row = mysqli_fetch_assoc($aidresult);
-                $egovid = strtoupper($row['egovid']);
-                $tempbirthdate = $row['birthdate'];
-                $currentsem = $row['currentsem'];
-                $batchyeardb = $row['batchyear'];
-                $emailpref = $row['emailpref'];
-                $email = $row['email'];
-                
-                $birthdate_explode = explode('/', $tempbirthdate);
+                    $row = "";
+                    $egovid = "";
+                    $currentsem = "";
+                    $batchyeardb = "";
+                    $emailpref = "";
+                    $email = "";
+                    
+                    $birthdate_explode = "";
+                }
+                else {
+                    $row = mysqli_fetch_assoc($aidresult);
+                    $egovid = strtoupper($row['egovid']);
+                    $tempbirthdate = $row['birthdate'];
+                    $currentsem = $row['currentsem'];
+                    $batchyeardb = $row['batchyear'];
+                    $emailpref = $row['emailpref'];
+                    $email = $row['email'];
+                    
+                    $birthdate_explode = explode('/', $tempbirthdate);
+                }
                 
         ?>
         <!-- Edit Form Starts -->

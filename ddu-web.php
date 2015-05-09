@@ -30,7 +30,7 @@
         </div>
         <div class="content ddu-web-links">
             <p>
-                This page is a repository of all the links available on internet, related to DDU. I tried my best to find as much information as possible. Still there's a scope of improvements. Suggestions are always welcome. You can send them <a href='http://www.darpandodiya.com/link-up' title='Send information related to DDIT' target='_blank'><b>here.</b></a>
+                This page is a repository of all the links available on internet, related to DDU. I tried my best to find as much information as possible. Still there's a scope of improvement. Suggestions are always welcome. You can send them <a href='http://www.darpandodiya.com/link-up' title='Send information related to DDIT' target='_blank'><b>here.</b></a>
             </p>
 
             <br><br>
@@ -57,7 +57,7 @@
 
                 <hr>
 
-                <p class="link-header"> Blogs By DDUians </p>
+                <p class="link-header" id="blogs"> Blogs By DDUians </p>
 
                 &bull; <a href='http://ibelievethat.in/' target='_blank' title='I Believe That - Anish Desai'>I Believe That - Anish Desai </a><br> 
                 &bull; <a href='http://antrikshah.blogspot.in/' target='_blank' title='PetalS and ThornS - Antriksh Shah'>PetalS and ThornS - Antriksh Shah </a><br> 

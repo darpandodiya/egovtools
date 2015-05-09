@@ -45,17 +45,18 @@
                     $aidresult = mysqli_query($connection, $aidquery);
 
                     if (mysqli_num_rows($aidresult) == 0) {
-                        echo "<p class='error-text'>Invalid Access ID. Click <a href='notify.php'>here</a> to try again. </p>";
-                        exit(0);
+                        echo "<p class='error-text'>Invalid Access ID. Please try again. </p>";
                     }
 
-                    $notifyquery = "UPDATE accessid SET email='".$email."', emailpref=1 WHERE aid='".$aid."'";
-                    //echo $notifyquery;
+                    else {
+                        $notifyquery = "UPDATE accessid SET email='".$email."', emailpref=1 WHERE aid='".$aid."'";
+                        //echo $notifyquery;
 
-                    $notifyresult = mysqli_query($connection, $notifyquery);
-                    
-                    if($notifyresult == 1) {
-                        echo "<p class='success-text'>Registration Successful! <br>Now you can sit back and relax. You'll get notifications whenever there's a new update.<br><br>Remember to edit your current semester in your <a href='accessid.php?mode=edit'>Access ID </a>after each semester.</p>";
+                        $notifyresult = mysqli_query($connection, $notifyquery);
+                        
+                        if($notifyresult == 1) {
+                            echo "<p class='success-text'>Registration Successful! <br>Now you can sit back and relax. You'll get notifications whenever there's a new update.<br><br>Remember to edit your current semester in your <a href='accessid.php?mode=edit'>Access ID </a>after each semester.</p>";
+                        }
                     }                     
                 }    
             ?>

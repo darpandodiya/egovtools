@@ -88,7 +88,10 @@
 
                 }
                 else {
-                    echo "<p class='error-text'>Invalid Access ID. Please try again.</p>";
+
+                    echo "<p class='error-text'>Invalid Access ID. Please <a href='result.php'>try again.</a></p>";
+                    $getaid = "";
+
                 }
             }
 
@@ -166,12 +169,12 @@
                             
                             if (strpos($scraped_data[0],'Error') !== false) {
                                 echo "<p class='error-text'>There's an error. Please check your input.</p>";
-                                exit();
                             }
-                            echo $scraped_data[0];
-                            echo '<p class="align-center-custom"><i>Bookmark this page now to get direct/faster access next time.</i></p>';
-
-                                                
+                            else {
+                                echo $scraped_data[0];
+                                echo '<p class="align-center-custom"><i>Bookmark this page now to get direct/faster access next time.</i></p>';
+                            }
+                                              
                         }
                     ?>
                 </div>
