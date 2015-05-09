@@ -1,5 +1,5 @@
 # egovtools
-Source code of EGov Tools. 
+Source code of EGov Tools >> http://wwww.darpandodiya.com/egov 
 
 Used Libraries: 
 
@@ -15,6 +15,5 @@ PHPMailer - To send mass emails: https://github.com/PHPMailer/PHPMailer
 
 
 
-See the EGov Tools in action at: http://wwww.darpandodiya.com/egov
 
 Contact me at: darpandodiya@gmail.com for any support. 
