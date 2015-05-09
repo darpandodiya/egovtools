@@ -20,6 +20,15 @@
         <link rel="stylesheet" href="css/layouts/side-menu.css">
     <!--<![endif]-->
 <script src="js/Chart.min.js"></script>
+
+<script type="text/javascript">
+window.onerror = function() {
+   var message;
+    message = document.getElementById('graph-error');
+    message.innerHTML = 'There was an error with your input. Please try again.';
+};
+</script>
+
 </head>
 <body>
 
@@ -45,6 +54,25 @@
 
     <div id="main">
         <div class="header">
+
+            <?php
+                require('getdbcon.php');
+                $connection = getConnection();
+
+                if(isset($_GET['aid'])) {
+                    $aid = $_GET['aid'];
+
+                    $aidquery_check = "SELECT egovid FROM accessid WHERE aid ='".$aid."'";
+
+                    $aidresult_check = mysqli_query($connection, $aidquery_check);
+
+                    if (mysqli_num_rows($aidresult_check) == 0) {
+                        echo "<p class='error-text'>Invalid Access ID. Please try again. </p>";
+                        $semester = "";
+                        $getaid = "";
+                    }
+                }
+            ?>
             <h2><a href="<?php echo basename($_SERVER['PHP_SELF']); ?>">My Graph</a></h2>
             <form class="pure-form" action="" method="GET">
                 <div class="">
@@ -76,26 +104,26 @@
         </div>
         <br><br>
 
+        <div class="content align-center-custom">
+        <p class="error-text" id='graph-error'></p>
+
         <?php
             if($semester == "overall") {
                 
-                echo '<div class="content align-center-custom">
-                        <canvas id="canvas2" height="400" width="600" class="align-center-custom"></canvas>
-                      </div>';
+                echo '<canvas id="canvas2" height="400" width="600" class="align-center-custom"></canvas>';
             } 
         
            elseif($getaid != "") {
 
-                echo '<div class="content align-center-custom">
-                        <canvas id="canvas1" height="600" width="800" class="align-center-custom"></canvas>
-                      </div>'; 
+                echo '<canvas id="canvas1" height="600" width="800" class="align-center-custom"></canvas>'; 
            } 
         ?>
-        
-                
-    <?php require_once('footer.php'); ?>    
+        </div>
+
+<?php require_once('footer.php'); ?>    
     </div>
-</div>  
+</div>
+          
 
                 <?php
                     if($getaid != "") {
@@ -107,10 +135,16 @@
                             $html = getContentFromAID($getaid, $examtype, $semester);
 
                             $ret = $html->find('div[id=content]');
+                            //echo $ret[0];
             
                             if (strpos($ret[0],'Error') !== false) {
-                                echo "<p class='error-text'>There's an error. Please check your input.</p>";
-                                exit();
+                                echo "
+                                <script>
+                                var message;
+                                message = document.getElementById('graph-error');
+                                message.innerHTML = 'There was an error with your input. Please try again.';
+                                </script>";
+                                exit;
                             }
                             
                             
@@ -141,7 +175,7 @@
                 
 
 <script>
-    var randomScalingFactor = function(){ return Math.round(Math.random()*100)%36};
+
 
     var barChartData = {
         labels : [<?php 
@@ -236,6 +270,7 @@
             barDatasetSpacing : 1,
         });
     }
+
 </script>
 
     <?php
@@ -262,7 +297,6 @@
             }
             else {
                 echo "<p class='error-text'>Invalid Access ID. Please try again.</p>";
-                exit(0);
             }
 
             $spi = array();
@@ -276,6 +310,8 @@
         ?>
 
         <script>
+
+        
             var SPIData = {
                 labels : [<?php 
                             for($i=1; $i<= sizeof($spi); $i++) { 
