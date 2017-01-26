@@ -1,6 +1,6 @@
 # egovtools
 
-PHP Bot for automating DDIT Results.
+PHP Bot for automating DDIT Results. [This project is no longer maintained. Scraping code may not work now on DDU site.]
 
 EGov Tools At Work > http://www.darpandodiya.com/egov 
 
